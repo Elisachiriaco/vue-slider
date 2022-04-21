@@ -46,7 +46,12 @@ const app = new Vue({
     stopAutoScroll(){
       clearInterval(this.intervalId);
       this.intervalId = null;
-    }
+    },
+    imageCurrent(index){
+      if (this.activeIndex != index){
+          this.activeIndex = index 
+      }
+  }
   },
   mounted(){
       this.autoScroll()
